@@ -1,0 +1,37 @@
+{
+    "globals": {
+      "__DEV__": true
+    },
+    "setupFiles": [
+      "./src/utils/tests/jest_helper.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|sass|scss)$": "babel-jest"
+    },
+    "transform": {
+      "^.+\\.js$": "./node_modules/babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "testEnvironment": "jsdom",
+    "roots": [
+      "./src"
+    ],
+    "testRegex": ".*.test.js",
+    "verbose": true,
+    "testPathIgnorePatterns": [
+      "__snapshots__"
+    ],
+    "coverageDirectory": "./coverage",
+    "unmockedModulePathPatterns": [
+      "react",
+      "enzyme"
+    ]
+  }
